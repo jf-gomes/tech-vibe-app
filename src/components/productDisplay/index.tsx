@@ -2,12 +2,7 @@ import { View, Text, Image } from "react-native";
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
-export interface ProductDisplayProps{
-    id: string,
-    img: string,
-    price: string,
-    name: string
-}
+import { ProductDisplayProps } from "./product";
 
 export default function ProductDisplay({ product }: {product: ProductDisplayProps}){
 
