@@ -9,7 +9,7 @@ export default function Account(){
             <View className="justify-center items-center mb-6">
                 <Image
                     source={require('../../../assets/iphone.png')}
-                    className="w-36 h-36 bg-black rounded-full"
+                    className="w-36 h-36 bg-black rounded-full mb-2"
                 />
                 <Text className="text-green text-2xl">João Gomes</Text>
             </View>

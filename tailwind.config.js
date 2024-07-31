@@ -11,7 +11,16 @@ module.exports = {
         green: "#468C98",
         darkBlue: "#476C9B",
         lightBlue: "#ADD9F4",
-        red: "#984447"
+        red: "#984447",
+        gray: "#CED0D2"
+      },
+      backgroundColor: {
+        black: "#101419",
+        green: "#468C98",
+        darkBlue: "#476C9B",
+        lightBlue: "#ADD9F4",
+        red: "#984447",
+        gray: "#CED0D2"
       }
     },
   },

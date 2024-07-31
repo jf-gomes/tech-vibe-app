@@ -1,8 +1,9 @@
 export interface ProductDisplayProps{
     id: string,
     img: string,
-    price: string,
+    price: number,
     name: string,
-    category?: string,
-    trending: boolean
+    category: string,
+    trending: boolean,
+    cartCount: number
 }
