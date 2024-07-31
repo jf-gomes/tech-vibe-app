@@ -35,7 +35,7 @@ export default function CategorySelector(){
     }
 
     return (
-        <View>
+        <View className="mb-6">
             <FlatList 
                 data={categories}
                 renderItem={({item}) => <RenderCategory category={item} />}

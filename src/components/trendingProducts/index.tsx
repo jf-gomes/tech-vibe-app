@@ -1,8 +1,8 @@
-import { FlatList, Text, View } from "react-native";
+import { FlatList, View } from "react-native";
 import Title from "../title";
 import ProductDisplay from "../productDisplay";
 
-import { TRENDING_PRODUCTS } from "../../utils/trendingProducts";
+import { PRODUCTS } from "../../utils/products";
 
 export default function TrendingProducts(){
 
@@ -11,7 +11,7 @@ export default function TrendingProducts(){
             <Title content="Mais vendidos" />
             <View className="flex-row">
                 <FlatList 
-                    data={TRENDING_PRODUCTS}
+                    data={PRODUCTS.filter((product) => product.trending)}
                     renderItem={({item}) => <ProductDisplay product={item} />}
                     horizontal
                 />
