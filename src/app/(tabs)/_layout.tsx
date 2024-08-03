@@ -13,9 +13,8 @@ export default function TabLayout(){
                     tabBarInactiveTintColor: theme.colors.black,
                     tabBarShowLabel: false,
                     tabBarStyle: {
-                        height: 100,
-                        alignItems: "center",
-                        justifyContent: "center",
+                        height: 70,
+                        padding: 16,
                         borderTopColor: "black"
                     }
                 }}
@@ -33,10 +32,23 @@ export default function TabLayout(){
                     }}
                 />
                 <Tabs.Screen
+                    name="wishlist"
+                    options={{
+                        tabBarIcon: ({ size, color }) => (<FontAwesome6 name="heart" size={size} color={color} />)
+                    }}
+                />
+                <Tabs.Screen
                     name="account"
                     options={{
                         tabBarIcon: ({ size, color }) => (<FontAwesome6 name="user-circle" size={size} color={color} />)
                     }}
+                />
+                <Tabs.Screen
+                    name="product"
+                    options={{
+                        tabBarButton: () => null,
+                        tabBarStyle: { display: 'none' },
+                      }}
                 />
             </Tabs>
         </View>

@@ -1,7 +1,7 @@
 import { View, Image, Text } from "react-native";
 import AntDesign from '@expo/vector-icons/AntDesign';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import { ProductDisplayProps } from "../productDisplay/product";
+import { ProductDisplayProps } from "../../../types/product";
 import { theme } from "../../theme";
 
 export default function CartProduct({ product }: { product: ProductDisplayProps }){

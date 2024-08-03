@@ -1,8 +1,4 @@
-export interface CategoryProps{
-    id: string,
-    text: string,
-    label: string
-}
+import { CategoryProps } from "../../types/category"
 
 export const CATEGORIES: CategoryProps[] = [
     {

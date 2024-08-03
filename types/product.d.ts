@@ -7,5 +7,6 @@ export interface ProductDisplayProps{
     category: string,
     trending: boolean,
     cartCount: number,
-    brand: string
+    brand: string,
+    onWishlist: boolean
 }

@@ -1,5 +1,5 @@
 import { Image, Pressable, Text, View } from "react-native"
-import { ProductDisplayProps } from "../productDisplay/product"
+import { ProductDisplayProps } from "../../../types/product"
 
 export default function TrendingProductDisplay({ product }: {product: ProductDisplayProps}){
     return (

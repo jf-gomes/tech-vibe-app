@@ -1,7 +1,6 @@
 import { FlatList, View } from "react-native";
 import Title from "../title";
 import TrendingProductDisplay from "../trendingProductDisplay";
-
 import { PRODUCTS } from "../../utils/products";
 
 export default function TrendingProducts(){

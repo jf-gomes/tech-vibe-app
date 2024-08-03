@@ -1,8 +1,6 @@
 import { View, Text, Image } from "react-native";
-
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-
-import { ProductDisplayProps } from "./product";
+import { ProductDisplayProps } from "../../../types/product";
 import { theme } from "../../theme";
 
 export default function ProductDisplay({ product }: {product: ProductDisplayProps}){

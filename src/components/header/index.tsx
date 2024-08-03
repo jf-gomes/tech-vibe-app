@@ -1,7 +1,5 @@
 import { View, Text } from "react-native";
-
 import { theme } from "../../theme";
-
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 export default function Header(){

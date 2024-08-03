@@ -4,7 +4,6 @@ import CategorySelector from "../categorySelector";
 import { PRODUCTS } from "../../utils/products";
 import ProductDisplay from "../productDisplay";
 import { useState } from "react";
-import { CATEGORIES } from "../../utils/categories";
 
 export default function CategoryProducts(){
 

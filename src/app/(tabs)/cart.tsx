@@ -5,7 +5,7 @@ import CartProduct from "../../components/cartProduct";
 
 import { PRODUCTS } from "../../utils/products";
 import { useEffect, useState } from "react";
-import { ProductDisplayProps } from "../../components/productDisplay/product";
+import { ProductDisplayProps } from "../../../types/product";
 import Btn from "../../components/btn";
 
 export default function Cart(){

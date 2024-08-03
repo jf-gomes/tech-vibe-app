@@ -1,5 +1,5 @@
 import { View, Text, FlatList, TouchableOpacity } from "react-native"
-import { CategoryProps } from "../../utils/categories"
+import { CategoryProps } from "../../../types/category"
 import { CATEGORIES } from "../../utils/categories"
 
 export default function CategorySelector({ setSelectedCategory }: { setSelectedCategory: any }){

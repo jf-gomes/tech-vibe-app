@@ -1,4 +1,4 @@
-import { ProductDisplayProps } from "../components/productDisplay/product"
+import { ProductDisplayProps } from "../../types/product"
 
 export const PRODUCTS: ProductDisplayProps[] = [
     {
@@ -11,6 +11,7 @@ export const PRODUCTS: ProductDisplayProps[] = [
         category: "laptop",
         trending: true,
         cartCount: 1,
+        onWishlist: false,
     },
     {
         id: "1",
@@ -22,6 +23,7 @@ export const PRODUCTS: ProductDisplayProps[] = [
         category: "phone",
         trending: true,
         cartCount: 0,
+        onWishlist: true,
     },
     {
         id: "2",
@@ -33,6 +35,7 @@ export const PRODUCTS: ProductDisplayProps[] = [
         category: "phone",
         trending: false,
         cartCount: 0,
+        onWishlist: false
     },
     {
         id: "3",
@@ -44,5 +47,6 @@ export const PRODUCTS: ProductDisplayProps[] = [
         category: "accessories",
         trending: false,
         cartCount: 1,
+        onWishlist: true
     }
 ]
