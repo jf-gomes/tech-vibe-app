@@ -23,29 +23,34 @@ export default function Cart(){
     const deliveryFee: number = 10.00
 
     return (
-        <ScrollView className="mx-6">
+        <ScrollView className="px-6 bg-white">
             <Title content="Seu carrinho" />
             <View>
-                {getCartProducts().map((product) => (
-                    <CartProduct product={product} />
-                ))}
+                <View>
+                    {getCartProducts().map((product) => (
+                        <CartProduct product={product} key={product.id} />
+                    ))}
+                </View>
+                <View>
+                    <View className="flex-row justify-between">
+                        <Text>
+                            {getCartProducts().length} produtos
+                        </Text>
+                        <Text>R${getTotalPrice()}</Text>
+                    </View>
+                    <View className="flex-row justify-between">
+                        <Text>Frete</Text>
+                        <Text>R${deliveryFee}</Text>
+                    </View>
+                    <View className="divide-solid border my-4">
+                    </View>
+                    <View className="flex-row justify-between">
+                        <Text className="font-bold">Total</Text>
+                        <Text className="font-bold">R${getTotalPrice() + deliveryFee}</Text>
+                    </View>
+                </View>
+                <Btn content="Finalizar compra" />
             </View>
-            <View className="flex-row justify-between">
-                <Text className="text-xl">
-                    {getCartProducts().length} produtos
-                </Text>
-                <Text className="text-xl">R${getTotalPrice()}</Text>
-            </View>
-            <View className="flex-row justify-between">
-                <Text className="text-xl">Frete</Text>
-                <Text className="text-xl">R${deliveryFee}</Text>
-            </View>
-            <View className="flex-row justify-between">
-                <Text className="font-bold text-xl">Total</Text>
-                <Text className="font-bold text-xl">R${getTotalPrice() + deliveryFee}</Text>
-            </View>
-
-            <Btn content="Finalizar compra" />
         </ScrollView>
     )
 }

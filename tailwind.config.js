@@ -10,6 +10,7 @@ module.exports = {
         black: "#101419",
         green: "#468C98",
         darkBlue: "#476C9B",
+        superLightBlue: "#E6F3FB",
         lightBlue: "#ADD9F4",
         red: "#984447",
         gray: "#CED0D2"
@@ -19,6 +20,16 @@ module.exports = {
         green: "#468C98",
         darkBlue: "#476C9B",
         lightBlue: "#ADD9F4",
+        superLightBlue: "#E6F3FB",
+        red: "#984447",
+        gray: "#CED0D2"
+      },
+      borderColor: {
+        black: "#101419",
+        green: "#468C98",
+        darkBlue: "#476C9B",
+        lightBlue: "#ADD9F4",
+        superLightBlue: "#E6F3FB",
         red: "#984447",
         gray: "#CED0D2"
       }

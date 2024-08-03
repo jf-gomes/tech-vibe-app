@@ -9,13 +9,14 @@ export default function TabLayout(){
             <Tabs
                 screenOptions={{
                     headerShown: false,
-                    tabBarActiveTintColor: theme.colors.green,
+                    tabBarActiveTintColor: theme.colors.darkBlue,
                     tabBarInactiveTintColor: theme.colors.black,
                     tabBarShowLabel: false,
                     tabBarStyle: {
                         height: 100,
                         alignItems: "center",
                         justifyContent: "center",
+                        borderTopColor: "black"
                     }
                 }}
             >

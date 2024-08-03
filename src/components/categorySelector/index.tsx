@@ -1,43 +1,23 @@
-import { View, Text, FlatList } from "react-native"
+import { View, Text, FlatList, TouchableOpacity } from "react-native"
+import { CategoryProps } from "../../utils/categories"
+import { CATEGORIES } from "../../utils/categories"
 
-interface CategoryProps{
-    id: string,
-    label: string
-}
-
-export default function CategorySelector(){
-
-    const categories: CategoryProps[] = [
-        {
-            id: "0",
-            label: "Tudo"
-        },
-        {
-            id: "1",
-            label: "Notebooks"
-        },
-        {
-            id: "2",
-            label: "Celulares"
-        },
-        {
-            id: "3",
-            label: "Acessórios"
-        }
-    ]
+export default function CategorySelector({ setSelectedCategory }: { setSelectedCategory: any }){
 
     const RenderCategory = ({ category }: {category: CategoryProps}) => {
         return (
-            <View className={category.id == "0" ? "bg-black rounded w-24 mr-2" : "bg-green rounded w-24 mr-2"}>
+            <TouchableOpacity className={category.id == "0" ? "bg-black rounded w-24 mr-2" : "bg-darkBlue rounded w-24 mr-2"} onPress={() =>{
+                setSelectedCategory(category.text)
+            }}>
                 <Text className="text-white rounded mx-2 text-center py-2">{ category.label }</Text>
-            </View>
+            </TouchableOpacity>
         )
     }
 
     return (
         <View className="mb-6">
             <FlatList 
-                data={categories}
+                data={CATEGORIES}
                 renderItem={({item}) => <RenderCategory category={item} />}
                 horizontal
             />

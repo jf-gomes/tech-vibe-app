@@ -3,33 +3,27 @@ import { View, Text, Image } from "react-native";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 import { ProductDisplayProps } from "./product";
+import { theme } from "../../theme";
 
 export default function ProductDisplay({ product }: {product: ProductDisplayProps}){
 
-    if (product.category){
-        return (
-            <View className="items-end mr-6 bg-white p-4 rounded-xl w-40 mb-6">
-                <FontAwesome name="heart" size={20} color="black" className="float-right" />
-                <View>
-                    <Image source={require('../../../assets/macbook.jpg')} className="h-32 w-32" />
-                    <Text className="text-xl text-green font-bold">R${product.price}</Text>
-                    <Text className="text-md">{product.name}</Text>
+    return (
+        <View className="mb-6">
+            <View className="items-end mr-6 p-4 rounded-xl w-40 mb-2 bg-white">
+                <FontAwesome name="heart" size={20} color={theme.colors.darkBlue} className="float-right" />
+                <View className="h-40 w-32 bg-white">
+                    <Image source={{
+                        uri: product.img
+                    }} className="h-40 w-32" />
                 </View>
                 
             </View>
-        )
-    } else {
-        return (
-            <View className="items-end mr-6 bg-white p-4 rounded-xl w-40">
-                <FontAwesome name="heart" size={20} color="black" className="float-right" />
-                <View>
-                    <Image source={require('../../../assets/macbook.jpg')} className="h-32 w-32" />
-                    <Text className="text-xl text-green font-bold">R${product.price}</Text>
-                    <Text className="text-md">{product.name}</Text>
-                </View>
-                
+            <View>
+                <Text className="font-bold">{product.name}</Text>
+                <Text>R${product.price}</Text>
             </View>
-        )
-    }
+        </View>
+        
+    )
     
 }

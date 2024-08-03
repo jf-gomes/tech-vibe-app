@@ -7,9 +7,9 @@ import Feather from '@expo/vector-icons/Feather';
 const MenuOption = ({ iconName, text }: { iconName: string, text: string }) => {
     return (
         <View className="flex-row justify-between my-4">
-            <View className="flex-row gap-6 items-center">
-                {iconName != "info" ? <FontAwesome6 name={iconName} size={30} color={theme.colors.green} /> : <Feather name="info" size={30} color={theme.colors.green} />}
-                <Text className="text-xl">{ text }</Text>
+            <View className="flex-row gap-4 items-center">
+                {iconName != "info" ? <FontAwesome6 name={iconName} size={20} color={theme.colors.darkBlue} /> : <Feather name="info" size={20} color={theme.colors.darkBlue} />}
+                <Text>{ text }</Text>
             </View>
             <MaterialIcons name="keyboard-arrow-right" size={30} color="black" />
         </View>
